@@ -232,8 +232,6 @@
       
     NSArray *constraints = [self lastConstraintAffectingView:self andView:previousView inAxis:self.axis];
     [self removeConstraints:constraints];
-    if (previousIsFirst)
-        [self.distributionStrategy alignView:previousView afterView:nil];
     
     if ([self firstArrangedSubview] == previousView) {
       [self.distributionStrategy alignView:previousView afterView:nil];
