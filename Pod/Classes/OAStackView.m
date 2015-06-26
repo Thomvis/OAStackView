@@ -222,10 +222,6 @@
       
     NSArray *constraints = [self lastConstraintAffectingView:self andView:previousView inAxis:self.axis];
     [self removeConstraints:constraints];
-    
-    if ([self firstArrangedSubview] == previousView) {
-      [self.distributionStrategy alignView:previousView afterView:nil];
-    }
   } else if (stackIndex == 0) {
     // Prepending a new item
     NSArray *constraints = [self firstConstraintAffectingView:self andView:nextView inAxis:self.axis];
@@ -249,14 +245,10 @@
   id previousView = [self arrangedSubviewBeforeView:view];
   id nextView = [self arrangedSubviewAfterView:view];
   
-  NSArray *constraint = [self constraintsAffectingView:view];
-  [self removeConstraints:constraint];
+  NSArray *constraints = [self constraintsAffectingView:view];
+  [self removeConstraints:constraints];
   
-  if (nextView) {
-    [self.distributionStrategy alignView:nextView afterView:previousView];
-  } else if(previousView) {
-    [self.distributionStrategy alignView:nil afterView:previousView];
-  }
+  [self.distributionStrategy alignView:nextView afterView:previousView];
 }
 
 #pragma mark - Hide and Unhide
