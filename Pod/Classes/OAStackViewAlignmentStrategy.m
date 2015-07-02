@@ -140,7 +140,7 @@
 
 - (NSArray*)constraintsalignViewOnOtherAxis:(UIView*)view {
   
-  id constraintString = [NSString stringWithFormat:@"%@:|-0-[view]-(>=0)-|", [self otherAxisString]];
+  id constraintString = [NSString stringWithFormat:@"%@:|-0-[view]-(>=0,0@200)-|", [self otherAxisString]];
   
   return [NSLayoutConstraint constraintsWithVisualFormat:constraintString
                                                  options:0
@@ -154,7 +154,7 @@
 
 - (NSArray*)constraintsalignViewOnOtherAxis:(UIView*)view {
   
-  id constraintString = [NSString stringWithFormat:@"%@:|-(>=0)-[view]-0-|", [self otherAxisString]];
+  id constraintString = [NSString stringWithFormat:@"%@:|-(>=0,0@200)-[view]-0-|", [self otherAxisString]];
   
   return [NSLayoutConstraint constraintsWithVisualFormat:constraintString
                                                  options:0
@@ -168,7 +168,7 @@
 
 - (NSArray*)constraintsalignViewOnOtherAxis:(UIView*)view {
   
-  NSString *constraintString = [NSString stringWithFormat:@"%@:|-(>=0)-[view]-(>=0)-|", [self otherAxisString]];
+  NSString *constraintString = [NSString stringWithFormat:@"%@:|-(>=0,0@200)-[view]-(>=0,0@200)-|", [self otherAxisString]];
   
   NSArray *edgeConstraints = [NSLayoutConstraint constraintsWithVisualFormat:constraintString
                                                  options:0
@@ -191,7 +191,7 @@
 @implementation OAStackViewAlignmentStrategyBaseline
 
 - (NSArray*)constraintsalignViewOnOtherAxis:(UIView*)view {
-  id constraintString = [NSString stringWithFormat:@"%@:|-(>=0@750)-[view]-(>=0@750)-|", [self otherAxisString]];
+  id constraintString = [NSString stringWithFormat:@"%@:|-(>=0,0@200)-[view]-(>=0,0@200)-|", [self otherAxisString]];
     
   return [NSLayoutConstraint constraintsWithVisualFormat:constraintString
                                                  options:0
