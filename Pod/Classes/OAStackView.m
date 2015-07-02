@@ -221,7 +221,9 @@
     //Appending a new item
       
     NSArray *constraints = [self lastConstraintAffectingView:self andView:previousView inAxis:self.axis];
-    [self removeConstraints:constraints];
+    if (constraints) {
+      [self removeConstraints:constraints];
+    }
   } else if (stackIndex == 0) {
     // Prepending a new item
     NSArray *constraints = [self firstConstraintAffectingView:self andView:nextView inAxis:self.axis];
