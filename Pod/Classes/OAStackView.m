@@ -198,7 +198,9 @@
     }
   }
 
-  [self addSubview:view];
+  if (view.superview != self) {
+    [self addSubview:view];
+  }
   [self insertObject:view inArrangedSubviewsAtIndex:newIndex];
 }
 
