@@ -199,7 +199,12 @@
   }
 
   if (view.superview != self) {
-    [self addSubview:view];
+    if (stackIndex < [self.arrangedSubviews count]) {
+      UIView *viewAfter = self.arrangedSubviews[stackIndex];
+      [self insertSubview:view atIndex:[self.subviews indexOfObject:viewAfter]];
+    } else {
+      [self addSubview:view];
+    }
   }
   [self insertObject:view inArrangedSubviewsAtIndex:newIndex];
 }
