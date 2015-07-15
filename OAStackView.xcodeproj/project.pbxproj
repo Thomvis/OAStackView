@@ -22,6 +22,7 @@
 		8298C95D1B4188FF0006C53E /* OAStackViewAlignmentStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298C94F1B4188FF0006C53E /* OAStackViewAlignmentStrategy.m */; };
 		8298C95E1B4188FF0006C53E /* OAStackViewDistributionStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8298C95F1B4188FF0006C53E /* OAStackViewDistributionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */; };
+		E9651C931B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8298C94F1B4188FF0006C53E /* OAStackViewAlignmentStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAStackViewAlignmentStrategy.m; sourceTree = "<group>"; };
 		8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAStackViewDistributionStrategy.h; sourceTree = "<group>"; };
 		8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAStackViewDistributionStrategy.m; sourceTree = "<group>"; };
+		E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAStackView_ArrangedSubviews.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				8298C94F1B4188FF0006C53E /* OAStackViewAlignmentStrategy.m */,
 				8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */,
 				8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */,
+				E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				8298C9561B4188FF0006C53E /* OAStackView+Hiding.h in Headers */,
 				8298C95E1B4188FF0006C53E /* OAStackViewDistributionStrategy.h in Headers */,
 				8298C95C1B4188FF0006C53E /* OAStackViewAlignmentStrategy.h in Headers */,
+				E9651C931B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
