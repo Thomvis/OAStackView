@@ -206,7 +206,10 @@
       [self addSubview:view];
     }
   }
-  [self insertObject:view inArrangedSubviewsAtIndex:newIndex];
+  
+  if (!view.hidden) {
+    [self insertObject:view inArrangedSubviewsAtIndex:newIndex];
+  }
 }
 
 - (void)removeArrangedSubview:(UIView *)view {
