@@ -323,7 +323,11 @@
     }
     
   } else {
-    res = [self lastArrangedSubview];
+    if (self.firstBaselineIsDefaultBaseline) {
+      res = [self firstArrangedSubview];
+    } else {
+      res = [self lastArrangedSubview];
+    }
   }
     
   if ([res isKindOfClass:[self class]]) {

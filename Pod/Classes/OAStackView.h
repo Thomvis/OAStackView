@@ -102,6 +102,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) OAStackViewDistribution distribution;
 @property(nonatomic) IBInspectable NSInteger distributionValue;
 
+@property(nonatomic) BOOL firstBaselineIsDefaultBaseline;
+
 - (instancetype)initWithArrangedSubviews:(NSArray*)views NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
