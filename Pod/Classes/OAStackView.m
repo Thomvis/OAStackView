@@ -13,6 +13,7 @@
 #import "OAStackView+Traversal.h"
 #import "OAStackViewAlignmentStrategy.h"
 #import "OAStackViewDistributionStrategy.h"
+#import "OATransformLayer.h"
 
 @interface OAStackView ()
 
@@ -25,7 +26,7 @@
 @implementation OAStackView
 
 + (Class)layerClass {
-    return [CATransformLayer class];
+    return [OATransformLayer class];
 }
 
 #pragma mark - Initialization
@@ -88,7 +89,12 @@
     // Does not have any effect because `CATransformLayer` is not rendered.
 }
 
--(void)setOpaque:(BOOL)opaque {
+- (void)setOpaque:(BOOL)opaque {
+  // Does not have any effect because `CATransformLayer` is not rendered.
+}
+
+- (void)setClipsToBounds:(BOOL)clipsToBounds
+{
     // Does not have any effect because `CATransformLayer` is not rendered.
 }
 

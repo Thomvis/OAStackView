@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8298C9401B4188F50006C53E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8298C93F1B4188F50006C53E /* Info.plist */; };
-		8298C9521B4188FF0006C53E /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8298C9431B4188FF0006C53E /* .gitkeep */; };
-		8298C9531B4188FF0006C53E /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8298C9451B4188FF0006C53E /* .gitkeep */; };
 		8298C9541B4188FF0006C53E /* OAStackView+Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8298C9461B4188FF0006C53E /* OAStackView+Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8298C9551B4188FF0006C53E /* OAStackView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298C9471B4188FF0006C53E /* OAStackView+Constraint.m */; };
 		8298C9561B4188FF0006C53E /* OAStackView+Hiding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8298C9481B4188FF0006C53E /* OAStackView+Hiding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,13 +20,14 @@
 		8298C95E1B4188FF0006C53E /* OAStackViewDistributionStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8298C95F1B4188FF0006C53E /* OAStackViewDistributionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */; };
 		E9651C931B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */; };
+		E9F384421B6A0997001FE0A7 /* OATransformLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F384401B6A0997001FE0A7 /* OATransformLayer.h */; };
+		E9F384431B6A0997001FE0A7 /* OATransformLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F384411B6A0997001FE0A7 /* OATransformLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8298C9231B4188700006C53E /* OAStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8298C93F1B4188F50006C53E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		8298C9431B4188FF0006C53E /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8298C9451B4188FF0006C53E /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8298C9461B4188FF0006C53E /* OAStackView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAStackView+Constraint.h"; sourceTree = "<group>"; };
 		8298C9471B4188FF0006C53E /* OAStackView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAStackView+Constraint.m"; sourceTree = "<group>"; };
 		8298C9481B4188FF0006C53E /* OAStackView+Hiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAStackView+Hiding.h"; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAStackViewDistributionStrategy.h; sourceTree = "<group>"; };
 		8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAStackViewDistributionStrategy.m; sourceTree = "<group>"; };
 		E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAStackView_ArrangedSubviews.h; sourceTree = "<group>"; };
+		E9F384401B6A0997001FE0A7 /* OATransformLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATransformLayer.h; sourceTree = "<group>"; };
+		E9F384411B6A0997001FE0A7 /* OATransformLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATransformLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,6 @@
 		8298C9441B4188FF0006C53E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8298C9451B4188FF0006C53E /* .gitkeep */,
 				8298C9461B4188FF0006C53E /* OAStackView+Constraint.h */,
 				8298C9471B4188FF0006C53E /* OAStackView+Constraint.m */,
 				8298C9481B4188FF0006C53E /* OAStackView+Hiding.h */,
@@ -123,6 +122,8 @@
 				8298C9501B4188FF0006C53E /* OAStackViewDistributionStrategy.h */,
 				8298C9511B4188FF0006C53E /* OAStackViewDistributionStrategy.m */,
 				E9651C921B56DD0A0005A8D4 /* OAStackView_ArrangedSubviews.h */,
+				E9F384401B6A0997001FE0A7 /* OATransformLayer.h */,
+				E9F384411B6A0997001FE0A7 /* OATransformLayer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -135,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8298C95A1B4188FF0006C53E /* OAStackView.h in Headers */,
+				E9F384421B6A0997001FE0A7 /* OATransformLayer.h in Headers */,
 				8298C9541B4188FF0006C53E /* OAStackView+Constraint.h in Headers */,
 				8298C9581B4188FF0006C53E /* OAStackView+Traversal.h in Headers */,
 				8298C9561B4188FF0006C53E /* OAStackView+Hiding.h in Headers */,
@@ -201,9 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8298C9531B4188FF0006C53E /* .gitkeep in Resources */,
-				8298C9401B4188F50006C53E /* Info.plist in Resources */,
-				8298C9521B4188FF0006C53E /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +216,7 @@
 				8298C9571B4188FF0006C53E /* OAStackView+Hiding.m in Sources */,
 				8298C95B1B4188FF0006C53E /* OAStackView.m in Sources */,
 				8298C95F1B4188FF0006C53E /* OAStackViewDistributionStrategy.m in Sources */,
+				E9F384431B6A0997001FE0A7 /* OATransformLayer.m in Sources */,
 				8298C95D1B4188FF0006C53E /* OAStackViewAlignmentStrategy.m in Sources */,
 				8298C9591B4188FF0006C53E /* OAStackView+Traversal.m in Sources */,
 				8298C9551B4188FF0006C53E /* OAStackView+Constraint.m in Sources */,
